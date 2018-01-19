@@ -76,7 +76,7 @@ public class GlobalReportTest {
     when(issue.ruleKey()).thenReturn(RuleKey.of("repo", rule));
     when(issue.severity()).thenReturn(severity);
     when(issue.isNew()).thenReturn(isNew);
-    when(issue.message()).thenReturn(message);
+    when(issue.message()).thenReturn(message); // TODO do it
 
     return issue;
   }
